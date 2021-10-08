@@ -31,5 +31,5 @@ jobs:
           server: ${{ secrets.GCP_INSTANCE_IP }}
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }} 
           local_path: './*.json'
-          remote_path: ${{ secrets.GCP_INSTANCE_PATH_S-SCT-01 }}
+          remote_path: ${{ secrets.GCP_INSTANCE_PATH_S_SCT_01 }}
           args: '-o ConnectTimeout=5'
