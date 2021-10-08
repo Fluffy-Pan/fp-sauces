@@ -1,7 +1,7 @@
 @echo off
 :: Prepare timestamp
 set zerotime=%time: =0%
-set outputtime=%date:~0,4%-%date:~5,2%-%date:~8,2%T%zerotime:~0,8%+08:00
+set outputtime=%date:~6,4%-%date:~3,2%-%date:~0,2%T%zerotime:~0,8%+08:00
 
 echo Checking internet connection...
 ping %1 -n 1 -w 1000 > NUL
